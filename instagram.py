@@ -34,7 +34,7 @@ class Instagram:
         sleep(2)
         fBody  = self.browser.find_element_by_xpath("//div[@class='isgrP']")
         s=0
-        while s<limit: # scroll 5 times
+        while s<limit: # scroll
             
             sleep(1)
             self.browser.execute_script('arguments[0].scrollTop = arguments[0].scrollTop + arguments[0].offsetHeight;', fBody)
@@ -59,7 +59,7 @@ class Instagram:
         sleep(3)
         fBody  = self.browser.find_element_by_xpath("//div[@class='isgrP']")
         s=0
-        while s<limit: # scroll 5 times
+        while s<limit: # scroll
             
             sleep(1)
             self.browser.execute_script('arguments[0].scrollTop = arguments[0].scrollTop + arguments[0].offsetHeight;', fBody)
