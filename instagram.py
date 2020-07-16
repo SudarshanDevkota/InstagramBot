@@ -11,8 +11,7 @@ class Instagram:
     def login(self):
         self.browser.get('https://instagram.com/')
         sleep(5)
-        # self.browser.find_element_by_partial_link_text('Log In').click()
-        # sleep(5)
+
         self.browser.find_element_by_name('username').send_keys(self.username)
         sleep(3)
         self.browser.find_element_by_name('password').send_keys(self.password)
